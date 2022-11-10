@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>SCDFinder</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+	<!--link rel="stylesheet/less" href="static/less/bootstrap.less" type="text/css" /-->
+	<!--link rel="stylesheet/less" href="static/less/responsive.less" type="text/css" /-->
+	<!--script src="static/js/less-1.3.3.min.js"></script-->
+	
+	<link href="static/css/bootstrap.min.css" rel="stylesheet"/>
+	<link href="static/css/bootstrap-responsive.min.css" rel="stylesheet"/>
+	<link href="static/css/style.css" rel="stylesheet"/>
+	<link href="static/css/bootstrap-select.min.css",rel="stylesheet"/>
+
+  <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+  <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Fav and touch icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="img/apple-touch-icon-144-precomposed.png"/>	
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/apple-touch-icon-114-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/apple-touch-icon-72-precomposed.png"/>
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-57-precomposed.png"/>
+  <link rel="shortcut icon" href="img/favicon.png"/>
+  
+<script type="text/javascript" src="static/js/jquery.min.js"></script>
+<script type="text/javascript" src="static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="static/js/scripts.js"></script>
+<script type="text/javascript" href="static/js/bootstrap-select.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function() {
+		$(function() {
+			//$(".accordion").accordion({
+			//	collapsible: true,
+			//	active: false,
+			//	autoHeight: false
+			//});
+		});
+	});
+
+</script>	
+
+</head>
+	<body>		
+		<div class="navbar navbar-inverse navbar-fixed-top">
+	      <div class="navbar-inner">
+	        <div class="container">
+	          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          <a class="brand" href="./">SCD<i>Finder</i></a>
+	          <div class="nav-collapse collapse">
+	            <ul class="nav">
+	              <li><a href="./about">About</a></li>
+	              <li><a href="http://lkscara.gitbooks.io/scdfinder-documentation/">Help</a></li>
+	            </ul>
+	          </div><!--/.nav-collapse -->
+	        </div>
+	      </div>
+	    </div>
+		<br>
+		<div id='logo'>
+		<img id="summary_results" src="static/img/logo.jpg" height='auto' width='auto' style="padding-top: 2em;float:left"></img>
+		</div>	
+		<div class="well" style="margin-top:2em;margin-left: 160px;">
+			<center><h3><u>About SCD<i>Finder</i></u></h3></center>
+			<p>
+			SCD<i>Finder</i> is used to search for SCD domains, comprised of multiple S&#47;T-Q motifs clustered in a stretch of amino acids. SCD domains are  known to be present in proteins that are phosphorylated by ATM and ATR, two master regulators of the DNA Damage Response (DDR).  <br/><br/>
+
+			As a result of different factors DNA can suffer a variety of injuries, which must be repaired in order to avoid genome instability, and prevent tumorigenesis.  ATM and ATR, coordinate a response to DNA damage that includes halting of the cell cycle, enzymatic repair of the DNA injury and triggering of programmed cell death when necessary. Previous studies have shown that ATM and ATR targets usually contain an SCD domain, which was originally defined as the presence of 3 motifs of either serine or threonine, followed by a glutamine anywhere within a stretch of 100 amino acids. The variable nature of this definition makes this particular domain difficult to predict using traditional motif and domain finding tools. <br/><br/>
+
+			SCD<i>Finder</i> scans and analyzes a protein, or all the proteins within a specific organism&#39;s proteome for the presence of SCDs. It allows the user to stipulate the SCD definition and helps identify putative ATM&#47;ATR targets.  SCD<i>Finder</i> is the product of an undergraduate research project by students and faculty from the <a href='http://www.stthom.edu/Academics/School_of_Arts_and_Sciences/Biology/Index.aqf'>Department of Biology</a> and the <a href='http://www.stthom.edu/Academics/School_of_Arts_and_Sciences/Mathematics/Index.aqf'>Department of Mathematics, Computer Science and Cooperative Engineering</a> at the University of St. Thomas (UST) in Houston, Texas. <br/><br/>
+
+			<em><b>Bibliography:</b></em><br/>
+
+			Cheung, H.C. et al. (2012) <i>An S&#47;TQ cluster domain census unveils new putative targets under Tel1&#47;Mec1 control.</i> BMC Genomics, 13, 664<br/><br/>
+
+			Traven, A. and Heierhorst, J. et al. (2005) <i>SQ&#47;TQ cluster domains: concentrated 
+			ATM&#47;ATR kinase phosphorylation site regions in DNA-damage-response proteins.</i> Bioessays, 27, 397-407 
+			</p>
+
+			<center><h3><u>About the Professors</u></h3></center>
+			<table>
+				<tr>
+					<td>
+						<h4>Dr Albert Ribes-Zamora<br/></h4>
+						<img src="static/img/ribes.png" width="100px" style="margin:10px"></img><br/>
+						<i>Assistant Professor, Department of Biology</i></br>
+
+						A faculty member at UST since 2010, Dr. Ribes-Zamora investigates DNA repair pathways and he is interested in protein interactions necessary for protein complex assembly during non-homologous end-joining. 
+					</td>
+					<td>
+						<h4>Dr Maia Larios-Sanz <br/></h4>
+						<img src="static/img/larios.png" width="100px" style="margin:10px"></img><br/>
+						<i>Associate Professor, Department of Biology</i></br>
+
+						Dr. Larios-Sanz has been a faculty member at UST since 2007. Her research interests include genome evolution (particularly in light of horizontal gene transfer), metagenomics and microbial ecology and evolution. 
+					</td>
+				</tr>
+			</table>
+			<center><h3><u>About the Students</u></h3></center>
+			<h4>Lukas Cara</h4>
+
+			&ldquo;The field of bioinformatics fascinates me since it combines my love of computers with that of biology. I am joining the class of 2018 at the University of Oklahoma College Medicine.&rdquo;<br/>
+			B.S. in Mathematics, Class of 2014<br/>
+			<i>Department of Mathematics, Computer Science and Cooperative Engineering </i><br/><br/>
+
+
+			<h4>Medina Baitemirova</h4>
+
+			 &ldquo;I started at the University of St Thomas in January of 2012. Soon after the first semester, I joined my Biology professors&#39; research team, studying the DNA damage pathway and proteins associated with it.  I am pursuing a Bioinformatics degree. Later, I am planning on pursuing and MD/Ph.D degree.&rdquo;<br/>
+			B.S. in Bioinformatics, Class of 2015<br/>
+			<i>Department of Biology</i><br/><br/>
+
+
+
+			<h4>Franklin Duong</h4>
+
+			&ldquo;Computer programming and the life sciences have always interested me. This interest in computer programming began during high school. In certain courses, I enjoyed applying myself and using programming to complete tasks that would be otherwise too exhausting to complete by hand. When I began attending the University of St. Thomas, I was presented with the opportunity to pursue biology and computer science. Being able to make any contribution to the working body of knowledge is invigorating. The process of creating this bioinformatics tool has shown me how much dedication is required. Bioinformatics has led our team to create a tool that will help researchers examine putative problems associated with DNA damage responses. I hope to see that others will also notice the value of the synthesis between biology and computer science. Discoveries are waiting to be made and the first step begins with bioinformatics.&rdquo;<br/>
+			Outstanding Graduate in Bioinformatics, Class of 2014<br/>
+			<i>Department of Biology</i><br/><br/>
+		</div>
+	</body>
+</html>
