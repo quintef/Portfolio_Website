@@ -8,10 +8,10 @@ def home():
     print('hello word')
     return render_template("index.html",name = "Fernando")
     
-@views.route("/about")
+@views.route("/about.html")
 def about_page():
     return render_template("about.html")
 
-@views.route("/contact")
+@views.route("/contact.html")
 def contact_page():
     return render_template("contact.html")

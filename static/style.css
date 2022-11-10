@@ -122,6 +122,10 @@ a:hover { text-decoration: none; color:rgb(5, 5, 6); }
 a:focus { text-decoration: none; color:yellow; }
 a:hover, a:active { text-decoration: none; color:black }
 
+@font-face {
+    font-family: Minecraftia;
+    src: url(Minecraftia.ttf);
+  }
 
 div h1{
     color: red; 
@@ -129,91 +133,95 @@ div h1{
 .Placeholder_Name {
     color:green;
 }
-body{
-    background-color: #f3f3f3;
-}
 
-header{
-    background-color:#f3f3f3;
-    width:100%;
-    height: 100px;
-}
 
 header .home_button{
-    font-family: Cambria;
-    font-size: 26px;
-    color:#111;
-    font-weight: 900;
+    font-family: 'Minecraftia';
+    font-weight: normal;
+    font-style: normal;                         
+
+    font-size: 40px;
+    color:white;
+    
     text-transform: uppercase;
     display: block;
-    margin: 0 auto;
-    text-align: center;
-    padding: 15px 0;
-}
-header nav .about_me{
-    color:#111;
-}
-
-header nav .contact_me{
-    color:#111;
-}
-header nav ul{
-    display:block;
-    margin:0 auto; 
-    width:fit-content;
-}
-header nav ul li {
-    display: inline-block;
-    float:left;
-    list-style:none;
-    padding: 0 16px; 
     
-}
-header nav ul li a{
-    font-family: Cambria;
-    font-size: 16px;
-    color:#111;
-    font-weight: 900;
-    text-transform: uppercase;
     text-align: center;
-    padding: 15px 0;
+    padding: 70px 60px;
 }
 
 
 /*Styling the index page outside the header*/
-
-.index_banner{
+.container{
+    overflow: hidden;
+}
+.slidingbackground{
     width:100%;
-    height:95vh;
-    background-image: url('images/intro-bg.jpg');
-    background-repeat: no-repeat;
+    height:100vh;
+    background-image: url('images/ttscreen.jpg');
     background-position: center;
     background-size: cover;
+    /*animation: slide 60s linear infinite;*/
+    
 }
-
-
+@keyframes slide{
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+    100% {
+      transform: translate3d(-1692px, 0, 0);
+    }
+  }
 section nav li{
     text-decoration: none;
-    font-size: 200px;
+    text-align: center;
+    font-size: 50px;
     color: white;
     
     
     list-style:none;
-    padding: 70px 20px; 
+    padding: 50px 150px; 
     display:block;
     margin:0 auto; 
     width:fit-content;
+
+    background-image: url(images/minecraftbutton.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 300px;
 }
 
 section h2 {
-    text-decoration: none;
-    font-size: 40px;
-    color: whitesmoke;
-    width:fit-content;
-    display: block;
-}
-section h1{
+    background-image: url(images/minecraftbutton.jpg);
+    background-position: center;
+
+    background-repeat: no-repeat;
+    background-size: 300px;
+    text-align: center;
     text-decoration: none;
     font-size: 20px;
     color: whitesmoke;
+    width:fit-content;
+    
+    font-family: 'Minecraftia';
+    font-weight: normal;
+    font-style: normal; 
+
+    text-transform: uppercase;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px 40px;
+}
+
+section button{
+    color:#000
+    text-decoration: none;
+    font-size: 40px;
+    
+    width:fit-content;
+    display: block;
+    font-family: 'Minecraftia';
+    font-weight: normal;
+    font-style: normal; 
 }
