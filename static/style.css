@@ -135,11 +135,12 @@ a:hover, a:active { text-decoration: none; color:black }
 
 header .home_button{
     font-family: 'Minecraftia';
-    font-weight: normal;
+    font-weight: bolder;
     font-style: normal;                         
 
     font-size: 40px;
-    color:white;
+    color:lightgrey;
+    text-shadow: 100px 100px 100px #111;
     
     text-transform: uppercase;
     display: block;
@@ -155,7 +156,7 @@ header .home_button{
 }
 .slidingbackground{
     width:100%;
-    height:100vh;
+    height:120vh;
     background-image: url('images/ttscreen.jpg');
     background-position: center;
     background-size: cover;
@@ -171,14 +172,15 @@ header .home_button{
     }
   }
 section nav li{
+    font-family: 'Minecraftia';
     text-decoration: none;
     text-align: center;
-    font-size: 50px;
+    font-size: 35px;
     color: white;
     
     
     list-style:none;
-    padding: 50px 150px; 
+    padding: 40px 100px; 
     display:block;
     margin:0 auto; 
     width:fit-content;
@@ -190,6 +192,7 @@ section nav li{
 }
 
 section h2 {
+    
     background-image: url(images/minecraftbutton.jpg);
     background-position: center;
 
@@ -209,7 +212,7 @@ section h2 {
     display: block;
     margin: 0 auto;
     text-align: center;
-    padding: 50px 40px;
+    padding: 50px 60px;
 }
 
 section button{

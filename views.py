@@ -15,3 +15,7 @@ def about_page():
 @views.route("/contact.html")
 def contact_page():
     return render_template("contact.html")
+
+@views.route("/resume.html")
+def resume_page():
+    return render_template("resume.html")
